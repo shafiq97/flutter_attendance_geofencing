@@ -1,0 +1,30 @@
+class User{
+  static String id = " ";
+  static String studentId = " ";
+  static String firstName = " ";
+  static String lastName = " ";
+  static String birthDate = " ";
+  static String address = " ";
+  static String ScholarshipName = " ";
+  static String MobileNumber = " ";
+  static String EmailId = " ";
+  static String Gender = " ";
+  static String Religion = " ";
+  static String Caste = " ";
+  static String Category = " ";
+  static String InstituteName = " ";
+  static String Income = " ";
+  static String profilePicLink = " ";
+  static double lat = 0;
+  static double long = 0;
+  static bool canEdit = true;
+  static bool lo = true;
+  static String status = "NULL";
+  static bool flag = true;
+  static int count = 0;
+  static int sec = 0;
+  static int min = 0;
+  static int hr = 0;
+  static int length = 0;
+  static String att = "ABSENT";
+}

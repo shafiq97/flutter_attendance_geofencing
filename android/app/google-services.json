@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "883322202500",
+    "firebase_url": "https://attendance-5b90a-default-rtdb.firebaseio.com",
+    "project_id": "attendance-5b90a",
+    "storage_bucket": "attendance-5b90a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883322202500:android:27553024fdae3bcd05d5d1",
+        "android_client_info": {
+          "package_name": "com.attendance.attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883322202500-d2sd7i4vkiu15h11ldkiqaekiv2cf6ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfzG21XVKzEMFQv-dBM2p36HbJQMbnZKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883322202500-d2sd7i4vkiu15h11ldkiqaekiv2cf6ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883322202500:android:3e1ff3edb5dd577d05d5d1",
+        "android_client_info": {
+          "package_name": "com.example.attendance_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883322202500-d2sd7i4vkiu15h11ldkiqaekiv2cf6ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfzG21XVKzEMFQv-dBM2p36HbJQMbnZKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883322202500-d2sd7i4vkiu15h11ldkiqaekiv2cf6ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883322202500:android:1cb732638338ac5005d5d1",
+        "android_client_info": {
+          "package_name": "com.example.school_attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883322202500-d2sd7i4vkiu15h11ldkiqaekiv2cf6ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfzG21XVKzEMFQv-dBM2p36HbJQMbnZKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883322202500-d2sd7i4vkiu15h11ldkiqaekiv2cf6ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
