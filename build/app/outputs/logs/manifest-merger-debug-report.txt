@@ -70,6 +70,7 @@ MERGED from [:flutter_plugin_android_lifecycle] /Users/shafiq/Desktop/Geofencing
 MERGED from [:url_launcher_android] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-16:12
 MERGED from [:shared_preferences_android] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:geocoding_android] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/geocoding_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:fluttertoast] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:location] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.browser:browser:1.5.0] /Users/shafiq/.gradle/caches/transforms-3/35ca71a015622c440b2dbd8af5407796/transformed/browser-1.5.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.biometric:biometric:1.1.0] /Users/shafiq/.gradle/caches/transforms-3/2cc22814788ce8b008f71ff5d0c523d0/transformed/biometric-1.1.0/AndroidManifest.xml:17:1-29:12
@@ -241,6 +242,8 @@ MERGED from [:shared_preferences_android] /Users/shafiq/Desktop/Geofencing-Atten
 MERGED from [:shared_preferences_android] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:geocoding_android] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/geocoding_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:geocoding_android] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/geocoding_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:location] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:location] /Users/shafiq/Desktop/Geofencing-Attendance-App/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.browser:browser:1.5.0] /Users/shafiq/.gradle/caches/transforms-3/35ca71a015622c440b2dbd8af5407796/transformed/browser-1.5.0/AndroidManifest.xml:20:5-44

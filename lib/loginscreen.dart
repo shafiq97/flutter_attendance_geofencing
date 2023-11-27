@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:attendance/main.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +16,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final GlobalKey<ScaffoldMessengerState> _scaffoldMessengerKey =
+      GlobalKey<ScaffoldMessengerState>();
+
   TextEditingController idController = TextEditingController();
   TextEditingController passController = TextEditingController();
 
@@ -33,6 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
         'https://cdn.discordapp.com/attachments/968498876111810603/1011036768008687746/Thesis-amico.png';
 
     return Scaffold(
+      key: _scaffoldMessengerKey,
       resizeToAvoidBottomInset: false,
       body: SingleChildScrollView(
         child: Container(
@@ -176,11 +182,21 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     GestureDetector(
                       onTap: () async {
-                        String url =
-                            'https://cdn.discordapp.com/attachments/968498876111810603/1011035371351592971/kids_wearing_masks_at_school-rafiki.png';
+                        // Get the input from the user
+                        String id = idController.text.trim();
+                        String password = passController.text.trim();
 
-                        if (await canLaunchUrlString(url)) {
-                          await launchUrlString(url);
+                        // Input validation (e.g., check if fields are not empty)
+                        if (id.isEmpty || password.isEmpty) {
+                          // Show an error message to the user
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text("Please fill in all fields"),
+                            ),
+                          );
+                        } else {
+                          // Call the registration function with the user's input
+                          await registerNewStudent(id, password);
                         }
                       },
                       child: Container(
@@ -276,5 +292,53 @@ class _LoginScreenState extends State<LoginScreen> {
         ],
       ),
     );
+  }
+
+  void showRegistrationSuccessDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Registration Successful'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text('Your account has been created successfully.'),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Okay'),
+              onPressed: () {
+                Navigator.of(context).pop(); // Dismiss the dialog
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Future<void> registerNewStudent(String id, String password) async {
+    try {
+      CollectionReference students =
+          FirebaseFirestore.instance.collection('student');
+      await students.add({
+        'id': id,
+        'password': password,
+      });
+      // Call the success dialog
+      showRegistrationSuccessDialog();
+      // Handle additional logic for successful registration if needed
+    } catch (e) {
+      // Show error dialog or handle the error
+      _scaffoldMessengerKey.currentState?.showSnackBar(
+        SnackBar(
+          content: Text("Error occurred during registration: ${e.toString()}"),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
   }
 }
